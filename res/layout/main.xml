@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/l_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gps_position" />
+
+    <TextView
+        android:id="@+id/l_pilot_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/l_position"
+        android:layout_marginTop="10dp"
+        android:text="@string/pilot_id" />
+
+    <TextView
+        android:id="@+id/l_reportback_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/l_pilot_id"
+        android:layout_marginTop="10dp"
+        android:text="@string/reportback_number" />
+
+    <TextView
+        android:id="@+id/l_additional_pilots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/l_reportback_number"
+        android:layout_marginTop="10dp"
+        android:text="@string/additional_pilots" />
+
+    <TextView
+        android:id="@+id/l_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/e_additional_pilots"
+        android:layout_marginTop="10dp"
+        android:text="@string/message" />
+
+    <EditText
+        android:id="@+id/e_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/l_message"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/v_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/c_goal"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/b_reportback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/v_status"
+        android:text="@string/reportback" >
+    </Button>
+
+    <EditText
+        android:id="@+id/e_additional_pilots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/l_additional_pilots"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="number"
+        android:digits="0123456789 ,.-;:" />
+
+    <TextView
+        android:id="@+id/v_pilot_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/l_pilot_id"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@id/l_pilot_id"
+        android:text="@string/not_set" />
+
+    <TextView
+        android:id="@+id/v_gps_pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/v_pilot_id"
+        android:layout_alignParentTop="true"
+        android:text="@string/waitingForGPS" />
+
+    <TextView
+        android:id="@+id/v_reportback_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/v_pilot_id"
+        android:layout_alignTop="@+id/l_reportback_number"
+        android:text="@string/not_set" />
+
+    <CheckBox
+        android:id="@+id/c_goal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/e_message"
+        android:text="@string/in_goal"
+        android:textColor="@android:color/secondary_text_light_nodisable"
+        android:textSize="14dp" />
+
+    <CheckBox
+        android:id="@+id/c_retrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/c_goal"
+        android:text="@string/no_retrieve_needed"
+        android:textColor="@android:color/secondary_text_light_nodisable"
+        android:textSize="14dp" />
+
+</RelativeLayout>
+</ScrollView>

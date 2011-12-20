@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReportBack</string>
+    <string name="reportback">Report Back</string>
+    <string name="pilot_id">My Pilot Number:</string>
+    <string name="reportback_number">Report-Back #:</string>
+    <string name="message">Message:</string>
+    <string name="sending">Sending</string>
+    <string name="sent">Sent</string>
+    <string name="to">to</string>
+    <string name="at">on</string>
+    <string name="noGPS">No GPS found, aborted.</string>
+    <string name="waitingForGPS">Waiting for GPS...</string>
+    <string name="tooLong">Your message (including additional pilots) is %1$s characters too long. No SMS sent.</string>
+    <string name="missingInformation">You must enter a Pilot Number and a Report-Back Phone Number in the Settings menu first.</string>
+    <string name="failure">SMS transmission failed: %1$s</string>
+    <string name="prefix">#FRRB4Android</string>
+    <string name="gps_position">GPS Position:</string>
+    <string name="not_set">&lt;not set&gt;</string>
+    <string name="additional_pilots">Additional Pilot Numbers:</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="about_text">This App is intended to be used in connection with Chris Trow\'s FastRetrieve system, see www.fastretrieve.com</string>
+    <string name="copyright">\u00A9 2011 Jörg Ewald</string>
+    <string name="reportback_number_long">Report-Back Phone Number:</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="in_goal"> In goal</string>
+    <string name="no_retrieve_needed"> No retrieve needed</string>
+    <string name="generalError">Something unexpected happened. Don\'t know what to do - throw your reserve maybe?</string>
+    <string name="browse">Browse...</string>
+</resources>

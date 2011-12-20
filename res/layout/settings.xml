@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<TextView
+	    android:id="@+id/l_pilot_id"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/pilot_id" />
+
+	<EditText 
+		android:id="@+id/e_pilot_id" 
+		android:layout_height="wrap_content"
+		android:background="@android:drawable/editbox_background"
+		android:layout_below="@id/l_pilot_id" 
+		android:layout_width="100dp" 
+		android:inputType="number"/>
+
+	<TextView
+	    android:id="@+id/l_reportback_number"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/e_pilot_id"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/reportback_number_long" />
+
+	<EditText 
+		android:id="@+id/e_reportback_number"
+		android:layout_height="wrap_content" 
+		android:background="@android:drawable/editbox_background"
+		android:layout_below="@id/l_reportback_number" 
+		android:layout_width="240dp"
+		android:inputType="phone"/>
+
+	<Button
+	    android:id="@+id/b_save"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/e_reportback_number"
+	    android:layout_marginTop="22dp"
+	    android:text="@string/save" />
+
+	<Button
+	    android:id="@+id/b_cancel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/b_save"
+	    android:layout_marginRight="16dp"
+	    android:layout_toLeftOf="@+id/b_save"
+	    android:text="@string/cancel" />
+
+	<Button
+	    android:id="@+id/b_browse"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/e_reportback_number"
+	    android:layout_marginTop="-5dp"
+	    android:text="@string/browse" />
+
+</RelativeLayout>
