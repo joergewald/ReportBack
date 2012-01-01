@@ -186,14 +186,14 @@ public class ReportBackActivity extends Activity {
 
 	protected void reportProgress(String pilotID, String position,
 			String additionalPilots, String message, String goal, String retrieve, String phoneNumber) {
-		mStatus.setText(getText(R.string.sending) + " '" + pilotID +  position + additionalPilots + message + goal + retrieve + "' " + getText(R.string.to) + " "
+		mStatus.setText(getText(R.string.sending) + " '" + pilotID + ":" + position + ":" + additionalPilots + ":" + message + goal + retrieve + "' " + getText(R.string.to) + " "
 				+ phoneNumber + " ...");
 	}
 
 	protected void reportResult(String pilotID, String position,
 			String additionalPilots, String message, String goal, String retrieve, String phoneNumber) {
 		Date now = new Date();
-		mStatus.setText(getText(R.string.sent) + " '" + pilotID + position + additionalPilots + message + goal + retrieve + "' " + getText(R.string.to) + " "
+		mStatus.setText(getText(R.string.sent) + " '" + pilotID + ":" + position + ":" + additionalPilots + ":" + message + goal + retrieve + "' " + getText(R.string.to) + " "
 				+ phoneNumber + " " + getText(R.string.at) + " "
 				+ now.toGMTString());
 	}
@@ -204,25 +204,25 @@ public class ReportBackActivity extends Activity {
 	}
 
 	protected String getPilotID() {
-		return ":" + mPilotID.getText().toString();
+		return mPilotID.getText().toString();
 	}
 
 	protected String getAdditionalPilots() {
-		return ":" + mAdditionalPilots.getText().toString();
+		return mAdditionalPilots.getText().toString();
 	}
 
 	protected String getMessage() {
-		return ":" + mMessage.getText().toString();
+		return mMessage.getText().toString();
 	}
 
 	protected String getPhoneNumber() {
 		return mReportBackNumber.getText().toString();
 	}
-
-	protected String getPosition() {
-		return ":" + Double.toString(mLastLocation.getLatitude()) + " " + Double.toString(mLastLocation.getLongitude());
-	}
 	
+	protected String getPosition() {
+		return Double.toString(mLastLocation.getLatitude()) + " " + Double.toString(mLastLocation.getLongitude()); 
+	}
+
 	protected String getGoal() {
 		return mGoal.isChecked() ? ":@goal" : "";
 	}
