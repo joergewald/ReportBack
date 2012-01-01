@@ -57,7 +57,7 @@ public class ReportBackSender extends AsyncTask<Void, Void, Void> {
 			String retrieve, String phoneNumber) {
 		String text = mView.getText(R.string.prefix).toString() + ":" + pilotID
 				+ ":" + position + ":" + additionalPilots + ":" + message
-				+ goal + retrieve;
+				+ ":" + goal + ":" + retrieve;
 		if (text.length() > MAX_SMS_LENGTH) {
 			mTooLong = text.length() - MAX_SMS_LENGTH;
 		} else {
